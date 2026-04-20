@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://meeting-assistant-oqqa.onrender.com"
+    "https://meeting-assistant.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
