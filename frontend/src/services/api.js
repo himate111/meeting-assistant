@@ -4,9 +4,9 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://meeting-assistant-oqqa.onrender.com/api',
   headers: { 'Content-Type': 'application/json' },
-  timeout: 60000, // 60s for AI processing
+  timeout: 60000,
 });
 
 // ── Meeting APIs ───────────────────────────────────

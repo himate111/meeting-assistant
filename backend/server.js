@@ -15,9 +15,14 @@ const PORT = process.env.PORT || 5000;
 // ── Middleware ─────────────────────────────────────
 // ← REPLACE your cors line with this:
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' ? false : 'http://localhost:3000',
+  origin: [
+    "http://localhost:3000",
+    "https://meeting-assistant-oqqa.onrender.com"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
+
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
