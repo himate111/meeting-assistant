@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://meeting-assistant.vercel.app"
+    "https://meeting-assistant-orpin.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
